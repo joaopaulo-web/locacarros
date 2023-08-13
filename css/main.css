@@ -16,7 +16,13 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+h2{
+  color: blue;
+}
 
+p{
+  color: red;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
