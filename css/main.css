@@ -11,16 +11,53 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500&family=Red+Hat+Display:wght@400;500;900&display=swap');
+/*font-family: 'Red Hat Display', sans-serif;
+font-family: 'REM', sans-serif; */
 *{
   color: #222;
   margin: 0;
   padding: 0;
 }
-
+.container-menu-nav{
+  position: absolute;
+  width: 89.9vw;
+  height: 90px;
+  border: 1px solid black;
+  padding: 20px 65px 0;
+  .logo-main{
+    width: 120px;
+  }
+  .menu-nav{
+    position: relative;
+    top: -60px;
+    left: 712px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+li{
+  display: inline;
+  font-family: 'REM', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0 15px;
+}
+a{
+  text-decoration: none;
+}
 .banner {
   background-image: url("/img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: left;
   width: 100vw;
   height: 500px;
+  .notebook-img{
+    position: relative;
+    top: 185px;
+    left: 821px;
+    width: 500px;
+  }
 }
