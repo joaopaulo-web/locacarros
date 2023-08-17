@@ -12,8 +12,8 @@
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500&family=Red+Hat+Display:wght@400;500;900&display=swap');
-/*font-family: 'Red Hat Display', sans-serif;
-font-family: 'REM', sans-serif; */
+/*font-family: 'Red Hat Display', sans-serif - textos;
+font-family: 'REM', sans-serif; ul e li's*/
 *{
   color: #222;
   margin: 0;
@@ -22,8 +22,8 @@ font-family: 'REM', sans-serif; */
 .container-menu-nav{
   position: absolute;
   width: 89.9vw;
-  height: 90px;
-  border: 1px solid black;
+  height: 100px;
+  border-bottom: 1px solid #00000017;
   padding: 20px 65px 0;
   .logo-main{
     width: 120px;
@@ -35,6 +35,7 @@ font-family: 'REM', sans-serif; */
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 39vw;
   }
 }
 li{
@@ -47,6 +48,51 @@ li{
 a{
   text-decoration: none;
 }
+/* Começo da config de Efeito Hover no menu NAV*/
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  background: #222222;
+  height: 4px;
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  transform: translateY(0);
+}
+/* Final da config de Efeito Hover no menu NAV*/
+span{
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 600;
+  font-size: 4.6rem;
+  padding: 14px 0;
+  background: #0A0707;
+  color: white;
+  width: 311px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+h1{
+  margin: 0;
+  font-weight: 500;
+}
 .banner {
   background-image: url("/img/banner.png");
   background-size: cover;
@@ -57,7 +103,58 @@ a{
   .notebook-img{
     position: relative;
     top: 185px;
-    left: 821px;
+    left: 770px;
     width: 500px;
   }
+  .banner-texts{
+    color: #0A0707;
+    display: flex;
+    position: relative;
+    top: -212px;
+    left: 370px;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 470px;
+    font-size: 2.2rem;
+    align-items: initial;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .banner-btn{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    position: relative;
+    bottom: 210px;
+    left: 373px;
+    width: 280px;
+  }
 }
+a.btn-1{
+  background: #0A0707;
+  padding: 13px;
+  margin-right: 30px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+}
+a.btn-2{
+  font-family: 'Red Hat Display', sans-serif;
+  background: #0A0707;
+  padding: 13px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+}
+/* Começo da config de Efeito Hover nos botões do banner*/
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+/* Final da config de Efeito Hover nos botões do banner*/
