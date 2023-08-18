@@ -273,6 +273,7 @@ p.p-txt{
 }
 .checker{
   width: 25px;
+  margin-right: 5px;
 }
 p.p-txt2{
   display: flex;
