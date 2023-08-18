@@ -227,6 +227,127 @@ img.icon{
   font-weight: 500;
   color: #7A7A7A;
 }
+.services-2{
+  width: 100%;
+  margin-top: 200px;
+}
+.shape, .shape-2{
+  width: 80%;
+  height: 430px;
+  background: #FCE600;
+  margin-left: 220px;
+  border-radius: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+.shape-2{
+  margin-top: 230px;
+  margin-left: 40px;
+  margin-bottom: 230px;
+}
+.shape-txts{
+  font-family: 'Red Hat Display', sans-serif;
+  margin-left: 340px;
+  padding-top: 80px;
+}
+.shape-txts2{
+  font-family: 'Red Hat Display', sans-serif;
+  margin-left: 80px;
+  padding-top: 80px;
+}
+h1.shape-txt{
+  color: #222222;
+  font-size: 2.3rem;
+  font-weight: 500;
+  width: 650px;
+  padding-bottom: 20px;
+}
+p.p-txt{
+  text-align: justify;
+  color: #222222;
+  font-size: 1.3rem;
+  width: 590px;
+  padding-bottom: 40px;
+}
+.p-services{
+  padding-bottom: 20px;
+}
+.checker{
+  width: 25px;
+}
+p.p-txt2{
+  display: flex;
+  align-items: center;
+  color: #222222;
+  font-size: 1.1rem;
+  width: 590px;
+  padding-bottom: 10px;
+}
+a.btn-shape{
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  background: #0A0707;
+  padding: 13px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+}
+a.btn-shape:hover{
+  background: #0a0707e6
+}
+/* Começo da config de Efeito Hover nos botões da segunda sessão de serviços */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* Final da config de Efeito Hover nos botões da segunda sessão de serviços */
+.sha-img-1{
+  position: absolute;
+  left: 50px;
+  top: 1527px;
+  width: 300px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+.sha-img-2{
+  position: absolute;
+  left: 150px;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+.sha-img-3{
+  position: absolute;
+  left: 840px;
+  top: 2100px;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
 /* Começo da config do scrollbar*/
 html::-webkit-scrollbar {
   width: 7px;
