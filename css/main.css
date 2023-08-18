@@ -12,8 +12,8 @@
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=REM:wght@400;500&family=Red+Hat+Display:wght@400;500;900&display=swap');
-/*font-family: 'Red Hat Display', sans-serif - textos;
-font-family: 'REM', sans-serif; ul e li's*/
+/*font-family: 'Red Hat Display', sans-serif; textos
+font-family: 'REM', sans-serif; ul e li's */
 *{
   color: #222;
   margin: 0;
@@ -22,10 +22,10 @@ font-family: 'REM', sans-serif; ul e li's*/
 }
 .container-menu-nav{
   position: absolute;
-  width: 89.9vw;
+  width: 88.9vw;
   height: 100px;
   border-bottom: 1px solid #00000017;
-  padding: 20px 65px 0;
+  padding: 12px 65px 0;
   .logo-main{
     width: 120px;
   }
@@ -42,7 +42,7 @@ font-family: 'REM', sans-serif; ul e li's*/
 li{
   display: inline;
   font-family: 'REM', sans-serif;
-  font-weight: 500;
+  font-weight: 100;
   font-size: 1.1rem;
   padding: 0 15px;
 }
@@ -99,8 +99,11 @@ h1{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  width: 100vw;
+  width: 100%;
   height: 500px;
+  .notebook{
+    width: 80vw;
+  }
   .notebook-img{
     position: relative;
     top: 185px;
@@ -136,12 +139,18 @@ a.btn-1{
   color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
 }
+.btn-1:hover{
+  background: #0a0707e6;
+}
 a.btn-2{
   font-family: 'Red Hat Display', sans-serif;
   background: #0A0707;
   padding: 13px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+}
+.btn-2:hover{
+  background: #0a0707e6;
 }
 /* Começo da config de Efeito Hover nos botões do banner*/
 .hvr-grow-shadow {
@@ -159,6 +168,87 @@ a.btn-2{
   transform: scale(1.1);
 }
 /* Final da config de Efeito Hover nos botões do banner*/
-section#top{
-  margin-top: 600px;
+.about-us{
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  margin: 125px 0;
+  padding: 0 65px;
 }
+.about-titles{
+  font-size: 1.7rem;
+  width: 765px;
+  margin-right: 115px;
+}
+.abt-h1{
+  font-weight: 500;
+}
+.about-txt{
+  font-size: 1.1rem;
+  line-height: 19px;
+  text-align: justify;
+  width: 831px;
+  letter-spacing: 0.7px;
+}
+p.txt{
+  color: #7A7A7A;
+  margin-top: 19px;
+  line-height: 22px;
+}
+.services{
+  display: grid;
+  justify-content: center;
+  column-gap: 130px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin: 0 180px;
+}
+.serv-1, .serv-2, .serv-3{
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  height: 240px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+  border-radius: 5px;
+}
+img.icon{
+  width: 80px;
+  padding-bottom: 10px;
+}
+.ttl-services{
+  font-size: 1.7rem;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.services-txt{
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #7A7A7A;
+}
+/* Começo da config do scrollbar*/
+html::-webkit-scrollbar {
+  width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: rgb(68, 68, 68);
+  border-radius: 5px;
+}
+/* Final da config do scrollbar*/
