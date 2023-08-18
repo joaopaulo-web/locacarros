@@ -335,12 +335,14 @@ a.btn-shape:hover{
   width: 300px;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+      border-radius: 15px;
 }
 .sha-img-2{
   position: absolute;
   left: 150px;
   width: 350px;
   box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+      border-radius: 15px;
 }
 .sha-img-3{
   position: absolute;
@@ -348,6 +350,7 @@ a.btn-shape:hover{
   top: 2100px;
   width: 350px;
   box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+      border-radius: 15px;
 }
 /* Começo da config do scrollbar*/
 html::-webkit-scrollbar {
