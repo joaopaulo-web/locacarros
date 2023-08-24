@@ -630,12 +630,32 @@ html::-webkit-scrollbar-thumb:active {
   }
   .container-menu-nav{
     background: black;
+    gap: 300px;
   }
   .banner-infos{
-    margin-left: 300px;
+    margin-left: 100px;
   }
   .sha-img-4{
     left: 850px;
+  }
+  .about-us{
+    padding-left: 112px;
+  }
+  .about-titles{
+    font-size: 1.7rem;
+    width: 535px;
+    margin-right: 75px;
+    line-height: 80.6px;
+  }
+  .about-txt{
+    font-size: 1.1rem;
+    line-height: 19px;
+    text-align: justify;
+    width: 401px;
+    letter-spacing: 2px;
+  }
+  .faq-header{
+    padding: 20px 224px;
   }
 }
 
@@ -701,7 +721,7 @@ html::-webkit-scrollbar-thumb:active {
     gap: 370px;
   }
   .banner-infos{
-    margin-left: 140px;
+    margin-left: 90px;
   }
   .sha-img-4{
     left: 734px;
@@ -717,6 +737,7 @@ html::-webkit-scrollbar-thumb:active {
   }
   .prices-1, .prices-2, .prices-3, .prices-4{
     width: 244px;
+    height: 760px;
     padding: 30px 6px 50px 6px;
   }
   p.p-txt{
@@ -746,10 +767,73 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 @media screen and (max-width: 1082px){
+  .shape, .shape-2{
+    text-align: center;
+  }
+  .services{
+    display: flex;
+    row-gap: 20px;
+  }
+  .centralize-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer{
+    margin-top: 30px;
+  }
+  .start-contact{
+    margin-bottom: 70px;
+  }
+  .prices-btn-footer{
+    visibility: visible !important;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    background: #262E33;
+    padding: 13px 59px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+    border-bottom: 5px solid #FCE500;
+    margin-bottom: 46px;
 
+  }
+  .coluna-2, .coluna-3{
+    display: none;
+  }
+  .abt-h1{
+    text-align: center !important;
+    width: 300px !important;
+    font-weight: 500 !important;
+  }
+  .about-titles{
+    margin: 0;
+  }
+  .contact-txts{
+    font-size: 1rem;
+  }
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
   .container-menu-nav{
-    background: #a14f5a;
-    gap: 230px;
+    background: #64ff00;
+    gap: 60px;
+  }
+  .banner-texts{
+    width: 380px !important;
+    font-size: 1.9rem !important;
+  }
+  .about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 111px;
+  }
+  .about-txt{
+    letter-spacing: 0;
+  }
+  .banner-infos{
+    margin-left: 25px;
   }
   .faq-header{
     padding: 20px 150px;
@@ -757,55 +841,443 @@ html::-webkit-scrollbar-thumb:active {
   .shape-txts{
     margin-left: 458px;
   }
-  .sha-img-4{
-    left: 678px;
+  .sha-img-1{
+    left: 44px;
+    top: 1640px;
+  }
+  .sha-img-2{
+    display: none;
   }
   .sha-img-3{
-    left: 606px;
+    display: none;
+  }
+  .sha-img-4{
+    left: 449px;
+    top: 2350px;
+    width: 250px;
+  }
+  .shape-txts{
+    margin-left: 313px;
+  }
+  h1.shape-txt{
+    font-size: 1.6rem;
+    width: 380px;
+  }
+  p.p-txt{
+    text-align: center;
+    width: 380px;
   }
   .shape-txts2{
-    margin-left: 28px;
+    margin-left: 1px;
+  }
+  .p-services{
+    display: flex !important;
+    align-items: center !important;
+    padding-bottom: 20px !important;
+    flex-direction: column !important;
+  }
+  .notebook-img{
+    width: 378px !important;
+  }
+  .services{
+    display: flex;
+    column-gap: 10px;
+  }
+  .serv-1, .serv-2, .serv-3{
+    height: 280px;
+  }
+  .start-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6633998f;
+    width: 100%;
+  }
+  .shape-contact{
+    display: flex;
+    margin: 0 51px;
+    width: 90%;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+    border-top: 5px solid #FCE500;
+    flex-direction: column;
+  }
+  .contact-txts{
+    margin: 0;
   }
 }
 
 /*Quando a res estiver entre 320px e 480px - Smartphone Low res e 1rst gens */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   *{
-    background: red;
+    background: #e0b6b6;
+  }
+  p.txt{
+    display: none;
+  }
+  .about-titles{
+    margin-right: 25px !important;
+  }
+  .abt-h1{
+    width: 170px;
+    font-weight: 500;
+  }
+  .about-titles{
+    font-size: 0.7rem;
+    width: 535px;
+    margin-right: 75px;
+    line-height: 26.9px;
+  }
+  .notebook-img{
+    display: none;
+  }
+  .sha-img-1{
+    display: none;
+  }
+  .sha-img-4{
+    display: none;
+  }
+  .prices-container{
+    background: rgba(10, 7, 7, 0.29);
+    height: 2190px;
+    display: flex;
+    flex-direction: column;
+  }
+  hr.prices-divider{
+    margin: 0;
+  }
+  .prices-btn{
+    position: relative;
+    top: -37px;
+  }
+  p.price-txt{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+  }
+  .divider{
+    margin-bottom: 80px;
+  }
+  .inclusos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .prices-1, .prices-2, .prices-3, .prices-4{
+    width: 500px;
+    height: 505px;
+    padding: 20px 0 0 20px;
+    border: 1px solid #7a7a7a69;
+    box-shadow: 8px 4px 17px -16px #0000007d;
+  }
+  .shape-txts{
+    margin: 0;
+  }
+  .p-services{
+    padding-bottom: 20px;
+    width: 340px;
+  }
+  p.p-txt2{
+    width: 330px;
+  }
+  .prices-1, .prices-2, .prices-3, .prices-4{
+    width: 400px;
+  }
+  .coluna-1, .coluna-2, .coluna-3, .coluna-4{
+    width: 100%;
+    border: 1px solid #7a7a7a69;
+    padding: 20px 0 20px 15px;
+  }
+  .faq-header{
+    padding: 20px 0;
+    text-align: center;
+  }
+  .faq-container{
+    margin: 0 20px 150px;
+  }
+  .faq-bg{
+    width: 320px;
+    padding-bottom: 20px;
   }
 }
 
 /*Quando a res estiver entre 481px e 720px - Smartphone Zone*/
 @media screen and (min-width: 481px) and (max-width: 720px) {
-  *{
-    background: blue;
+  .p-txt2{
+    width: 260px;
+  }
+  .container-menu-nav{
+    padding-left: 30px;
+  }
+  .menu-nav{
+    width: 340px;
+    text-align: left;
+  }
+  .notebook{
+    display: none;
+  }
+  .banner-infos{
+    margin-left: 185px;
+  }
+  .banner-texts{
+    width: 380px !important;
+  }
+  .prices-container{
+    background: rgba(10, 7, 7, 0.29);
+    height: 2070px;
+    display: flex;
+    flex-direction: column;
+  }
+  hr.prices-divider{
+    margin: 0;
+  }
+  .prices-btn{
+    position: relative;
+    top: -37px;
+  }
+  p.price-txt{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+  }
+  .divider{
+    margin-bottom: 80px;
+  }
+  .inclusos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .prices-1, .prices-2, .prices-3, .prices-4{
+    width: 500px;
+    height: 505px;
+    padding: 20px 0 0 20px;
+    border: 1px solid #7a7a7a69;
+    box-shadow: 8px 4px 17px -16px #0000007d;
+  }
+  .faq-container{
+    display: flex;
+    width: 90%;
+    margin: 0 35px 108px 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FCE500;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+  }
+  .faq-header{
+    padding: 20px 17px;
+    text-align: center;
+  }
+  .faq-bg{
+    width: 490px;
+  }
+  .centralize{
+
+  }
+  .about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+  }
+  .about-titles{
+    font-size: 1.1rem;
+    margin-right: 30px;
+    line-height: 62px;
+  }
+  .about-txt{
+    letter-spacing: 0;
+    width: 640px;
+  }
+  .services{
+    display: flex;
+   column-gap: 10px;
+  }
+  .serv-1, .serv-2, .serv-3{
+    height: 310px;
+  }
+  .sha-img-1{
+    left: 34px;
+    top: 1595px;
+    width: 230px;
+  }
+  .sha-img-4{
+    left: 403px;
+    top: 2010px;
+    width: 230px;
+  }
+  p.txt{
+    font-size: 1.1rem !important;
+    line-height: 17px;
+    margin: 0;
+  }
+  .shape-txts{
+    padding-top: 25px;
+    margin-left: 250px;
+  }
+  .shape, .shape-2{
+    height: 330px;
+  }
+  .shape-2{
+    margin-top: 140px;
   }
 }
 
 /*Quando a res estiver entre 721px e 768px - Tablet / iPad */
-@media screen and (min-width: 721px) and (max-width: 768px) {
+@media screen and (min-width: 721px) and (max-width: 786px) {
   *{
     background: aqua;
+  }
+  .container-menu-nav{
+    padding-left: 25px;
+    gap: 200px;
+  }
+  .notebook{
+    display: none;
+  }
+  .menu-nav{
+    width: 310px;
+  }
+  .banner-texts{
+    font-size: 1.4rem !important;
+    width: 470px !important;
+  }
+  .faq-container{
+    margin: 0 42px 150px;
+  }
+  .about-us{
+    padding: 10px 30px;
+  }
+  .about-titles{
+    font-size: 1.2rem;
+    width: 405px;
+    margin-right: 75px;
+    line-height: 53px;
+  }
+  p.txt{
+    width: 410px;
+  }
+  h1.faq-header{
+    text-align: center;
+  }
+  .prices-container{
+    background: rgba(10, 7, 7, 0.29);
+    height: 2070px;
+    display: flex;
+    flex-direction: column;
+  }
+  hr.prices-divider{
+    margin: 0;
+  }
+  .prices-btn{
+    position: relative;
+    top: -37px;
+  }
+  p.price-txt{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+  }
+  .divider{
+    margin-bottom: 80px;
+  }
+  .inclusos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    width: 100%;
+  }
+  .prices-1, .prices-2, .prices-3, .prices-4{
+    width: 715px;
+    height: 505px;
+    padding: 20px 0 0 20px;
+    border: 1px solid #7a7a7a69;
+    box-shadow: 8px 4px 17px -16px #0000007d;
+  }
+  .sha-img-4{
+    top: 2200px;
   }
 }
 
 /*Quando a res estiver entre 769px e 900px - Tablet e Smartphone deitado */
-@media screen and (min-width: 769px) and (max-width: 900px) {
+@media screen and (min-width: 786px) and (max-width: 970px) {
   *{
-    background: burlywood;
+    background: red;
+  }
+  .prices-container{
+    background: rgba(10, 7, 7, 0.29);
+    height: 2070px;
+    display: flex;
+    flex-direction: column;
+  }
+  .prices-1, .prices-2, .prices-3, .prices-4{
+    width: 715px;
+    height: 505px;
+    padding: 20px 0 0 20px;
+    border: 1px solid #7a7a7a69;
+    box-shadow: 8px 4px 17px -16px #0000007d;
+  }
+  hr.prices-divider{
+    margin: 0;
+  }
+  .prices-btn{
+    position: relative;
+    top: -37px;
+  }
+  .divider{
+    margin-bottom: 130px;
+  }
+  .inclusos-divider{
+
+  }
+  .inclusos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    width: 100%;
+  }
+  p.price-txt{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+  }
+  p.prices-txt2{
+    font-size: 1.4rem;
+  }
+  .faq-header{
+    padding: 20px 94px !important;
   }
 }
 
-/*Quando a res estiver entre 901px e 1028px - Tablet deitado */
-@media screen and (min-width: 901px) and (max-width: 1028px) {
+/*Quando a res estiver entre 900px e 1028px - Tablet deitado */
+@media screen and (min-width: 900px) and (max-width: 1028px) {
   .container-menu-nav{
     background: black;
+    gap: 100px;
   }
   .notebook-img{
-    width: 410px !important;
+    width: 348px !important;
   }
   .services{
     column-gap: 10px;
+    display: flex;
+  }
+  .serv-1, .serv-2, .serv-3{
+    height: 270px;
   }
   .sha-img-1{
     left: 51px;
@@ -831,20 +1303,11 @@ html::-webkit-scrollbar-thumb:active {
   .sha-img-2{
     left: 80px;
   }
-  .sha-img-3{
-    width: 250px;
-    top: 2260px;
-  }
-  .sha-img-4{
-    width: 290px;
-    top: 2292px;
-    left: 687px;
-  }
   .shape-txts{
     margin-left: 396px;
   }
   .faq-header{
-    padding: 20px 119px;
+    padding: 20px 110px;
   }
   .contact-txts{
     margin: 0;
@@ -861,5 +1324,38 @@ html::-webkit-scrollbar-thumb:active {
     background-repeat: no-repeat;
     width: 100%;
     height: 434px;
+  }
+  h1.shape-txt{
+    font-size: 1.5rem;
+    width: 370px;
+  }
+  .p-txt{
+    width: 370px !important;
+    font-size: 1.1rem !important;
+  }
+  .about-txt{
+    font-size: 1.1rem;
+    line-height: 19px;
+    text-align: justify;
+    width: 831px;
+    letter-spacing: 1px;
+  }
+  .about-titles{
+    font-size: 1.2rem;
+    width: 706px;
+    margin-right: 115px;
+  }
+  .sha-img-3{
+    width: 290px;
+    top: 2280px;
+    left: 540px;
+  }
+  .sha-img-4{
+    width: 290px;
+    top: 2316px;
+    left: 582px;
+  }
+  .shape-2{
+    width: 89%;
   }
 }
