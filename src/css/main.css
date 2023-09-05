@@ -84,7 +84,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/img/banner.png);
+  background-image: url(/src/img/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -1439,7 +1439,7 @@ html::-webkit-scrollbar-thumb:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/img/banner.png);
+    background-image: url(/src/img/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
